@@ -17,6 +17,7 @@ a {
   text-decoration: none;
   color: #999;
 }
+
 a:hover {
   color: #9883d8;
 }
@@ -31,6 +32,7 @@ a:hover {
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -45,12 +47,15 @@ a:hover {
     margin-right: auto;
     color: white;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
+
 .nav a:hover {
   color: white
 }
@@ -62,20 +67,28 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
+
+.cat-pics, .japan-pics{
+max-width: 200px;
+}
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border-radius: 20%;
+  border: 5px solid #222;
+  transition: all .8s;
 }
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -84,12 +97,14 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 } 
+
 .location {
   background-color: #222;
   color: yellow;
 }
+
 .card {
-  margin: 30px;
+  margin: 10px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -98,6 +113,56 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.exp-header{
+  font-weight: 800;
+}
+
+.exp-year{
+  font-weight: 400;
+  font-size: 14px;
+  color: grey;
+}
+
+.exp-details{
+  font-weight: 400;
+}
+
+.exp-card {
+  margin: 20px 10px 50px 30px;
+  padding: 20px 40px 40px;
+  max-width: 1000px;
+  text-align: left;
+  background: #ffffff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.skills-card {
+  margin: 20px 30px 20px 10px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.skills-card-content {
+  padding: 20px 40px 40px;
+  margin: 0 0 30px 0;
+  max-width: 500px;
+  text-align: left;
+  background: #ffffff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.exp-card:hover {
+  border-color: #ff99ff;
+}
+
+.skills-card-content:hover {
+  border-color: #ff99ff;
+}
 .card:hover {
   border-color: #ff99ff;
 }
@@ -105,6 +170,19 @@ header .profile-image:hover {
 ul.skills {
   padding: 0;
   text-align: center;
+}
+
+ul.softwares {
+  padding: 0;
+}
+
+.softwares li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #244fa5;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
 }
 
 .skills li {
@@ -151,18 +229,23 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
+
 a.twitter {
   background-image: url(images/twitter.svg);
 }
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
@@ -177,6 +260,15 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .exp-flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex; 
+    max-width: 1600px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   header {
